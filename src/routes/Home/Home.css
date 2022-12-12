@@ -1,0 +1,62 @@
+.container-home {
+  height: calc(100% - 75px);
+  background-color: #111111;
+}
+
+.home-container {
+  min-height: calc(100vh - 75px);
+  background: linear-gradient(to right, #111111, rgb(41, 41, 41));
+  background-size: 500% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+
+  animation-name: background;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.img-husky {
+  max-width: 300px;
+  animation: float 2s ease-in-out infinite;
+}
+
+.container-text {
+  color: #7cabc9;
+}
+.container-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #7cabc9;
+}
+.container-text span {
+  font-weight: 600;
+  color: #7cabc9;
+}
+.container-text h2 {
+  color: white;
+}
+
+@keyframes background {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}

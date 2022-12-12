@@ -1,0 +1,119 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 75px;
+  background-color: #111111;
+  color: #637e8f;
+  font-family: "Sora", sans-serif;
+  border-bottom: 2px solid #637e8f;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 60px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 50%;
+}
+
+.home,
+.breeds,
+.images,
+.favorites {
+  text-decoration: none;
+  color: #727272;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.home:hover {
+  color: #fff;
+}
+.breeds:hover {
+  color: #fff;
+}
+.images:hover {
+  color: #fff;
+}
+.favorites:hover {
+  color: #fff;
+}
+
+.signup {
+  border-radius: 5px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .log {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #000000;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .home,
+  .skills,
+  .contact,
+  .about,
+  .signup {
+    color: #637e8f;
+    text-align: center;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .signup {
+    background-color: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 30px;
+    color: #637e8f;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    right: 25px;
+    cursor: pointer;
+  }
+}

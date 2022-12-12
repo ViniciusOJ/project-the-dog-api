@@ -1,0 +1,13 @@
+.pet-notFound {
+  width: 100%;
+  height: calc(100vh - 280px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-notFound h1 {
+  font-size: 4rem;
+  color: white;
+  text-decoration: underline;
+}
